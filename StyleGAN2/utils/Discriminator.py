@@ -1,0 +1,1 @@
+# <!todo> i am try to understand the construct of StyleGAN2
