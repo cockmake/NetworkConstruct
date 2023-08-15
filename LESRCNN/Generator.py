@@ -15,7 +15,7 @@ class MeanShift(nn.Module):
         self.shifter.bias.data = torch.tensor([r, g, b], dtype=torch.float32)
         # Freeze the mean shift layer
         for params in self.shifter.parameters():
-            params.trainable = False
+            params.requires_grad = False
 
     def forward(self, x):
         x = self.shifter(x)
